@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Page" representedClassName=".Page" syncable="YES">
+        <attribute name="pageid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="terms" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Terms" syncable="YES"/>
+        <relationship name="thumbnail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Thumbnail" syncable="YES"/>
+    </entity>
+    <entity name="Terms" representedClassName=".Terms" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Thumbnail" representedClassName=".Thumbnail" syncable="YES">
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Page" positionX="-218" positionY="-144" width="128" height="103"/>
+        <element name="Terms" positionX="-423" positionY="-27" width="128" height="60"/>
+        <element name="Thumbnail" positionX="-54" positionY="18" width="128" height="60"/>
+    </elements>
+</model>

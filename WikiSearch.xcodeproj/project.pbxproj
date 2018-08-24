@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B173113C5631882D6B4AB620 /* Pods_WikiSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9D3EC4125A533AA3AAF3FC /* Pods_WikiSearch.framework */; };
+		B797CD18212D7BF200136D08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD17212D7BF200136D08 /* AppDelegate.swift */; };
+		B797CD1A212D7BF200136D08 /* WSWikiSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD19212D7BF200136D08 /* WSWikiSearchViewController.swift */; };
+		B797CD1D212D7BF200136D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B797CD1B212D7BF200136D08 /* Main.storyboard */; };
+		B797CD20212D7BF200136D08 /* WikiSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B797CD1E212D7BF200136D08 /* WikiSearch.xcdatamodeld */; };
+		B797CD22212D7BF400136D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B797CD21212D7BF400136D08 /* Assets.xcassets */; };
+		B797CD25212D7BF400136D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B797CD23212D7BF400136D08 /* LaunchScreen.storyboard */; };
+		B797CD30212D7BF400136D08 /* WikiSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD2F212D7BF400136D08 /* WikiSearchTests.swift */; };
+		B797CD3B212D7BF500136D08 /* WikiSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD3A212D7BF500136D08 /* WikiSearchUITests.swift */; };
+		B797CD5D212D823000136D08 /* WSCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD5C212D823000136D08 /* WSCoreDataManager.swift */; };
+		B797CD5F212D826400136D08 /* WSCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD5E212D826400136D08 /* WSCoreDataStack.swift */; };
+		B797CD61212D828500136D08 /* WSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD60212D828500136D08 /* WSNetworkManager.swift */; };
+		B797CD67212D82FC00136D08 /* WSAppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD66212D82FC00136D08 /* WSAppConstant.swift */; };
+		B797CD6B212D871A00136D08 /* PageDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD6A212D871A00136D08 /* PageDataItem.swift */; };
+		B797CD6D212D881E00136D08 /* ThumbnailDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD6C212D881E00136D08 /* ThumbnailDataItem.swift */; };
+		B797CD6F212D887100136D08 /* TermsDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD6E212D887100136D08 /* TermsDataItem.swift */; };
+		B797CD71212D8B9700136D08 /* QueryDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD70212D8B9700136D08 /* QueryDataItem.swift */; };
+		B797CD73212D8D8600136D08 /* SearchResultDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD72212D8D8600136D08 /* SearchResultDataItem.swift */; };
+		B797CD77212DAB2500136D08 /* WikiSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD76212DAB2500136D08 /* WikiSearchViewModel.swift */; };
+		B797CD79212EF95A00136D08 /* WSWikiSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD78212EF95A00136D08 /* WSWikiSearchTableViewCell.swift */; };
+		B797CD982130527B00136D08 /* Thumbnail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD922130527B00136D08 /* Thumbnail+CoreDataClass.swift */; };
+		B797CD992130527B00136D08 /* Terms+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD932130527B00136D08 /* Terms+CoreDataProperties.swift */; };
+		B797CD9A2130527B00136D08 /* Page+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD942130527B00136D08 /* Page+CoreDataProperties.swift */; };
+		B797CD9B2130527B00136D08 /* Thumbnail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD952130527B00136D08 /* Thumbnail+CoreDataProperties.swift */; };
+		B797CD9C2130527B00136D08 /* Terms+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD962130527B00136D08 /* Terms+CoreDataClass.swift */; };
+		B797CD9D2130527B00136D08 /* Page+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD972130527B00136D08 /* Page+CoreDataClass.swift */; };
+		B797CD9F2130647200136D08 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CD9E2130647200136D08 /* OfflineViewController.swift */; };
+		B797CDA1213066F900136D08 /* OfflineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CDA0213066F900136D08 /* OfflineViewModel.swift */; };
+		B797CDA3213068B300136D08 /* OfflineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CDA2213068B300136D08 /* OfflineTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B797CD2C212D7BF400136D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B797CD0C212D7BF200136D08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B797CD13212D7BF200136D08;
+			remoteInfo = WikiSearch;
+		};
+		B797CD37212D7BF500136D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B797CD0C212D7BF200136D08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B797CD13212D7BF200136D08;
+			remoteInfo = WikiSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F294E0349AF696CE5D97F13 /* Pods-WikiSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WikiSearch/Pods-WikiSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		9E9D3EC4125A533AA3AAF3FC /* Pods_WikiSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B797CD14212D7BF200136D08 /* WikiSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B797CD17212D7BF200136D08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B797CD19212D7BF200136D08 /* WSWikiSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSWikiSearchViewController.swift; sourceTree = "<group>"; };
+		B797CD1C212D7BF200136D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B797CD1F212D7BF200136D08 /* WikiSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WikiSearch.xcdatamodel; sourceTree = "<group>"; };
+		B797CD21212D7BF400136D08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B797CD24212D7BF400136D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B797CD26212D7BF400136D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B797CD2B212D7BF400136D08 /* WikiSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B797CD2F212D7BF400136D08 /* WikiSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearchTests.swift; sourceTree = "<group>"; };
+		B797CD31212D7BF400136D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B797CD36212D7BF400136D08 /* WikiSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B797CD3A212D7BF500136D08 /* WikiSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearchUITests.swift; sourceTree = "<group>"; };
+		B797CD3C212D7BF500136D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B797CD5C212D823000136D08 /* WSCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCoreDataManager.swift; sourceTree = "<group>"; };
+		B797CD5E212D826400136D08 /* WSCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCoreDataStack.swift; sourceTree = "<group>"; };
+		B797CD60212D828500136D08 /* WSNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSNetworkManager.swift; sourceTree = "<group>"; };
+		B797CD66212D82FC00136D08 /* WSAppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSAppConstant.swift; sourceTree = "<group>"; };
+		B797CD6A212D871A00136D08 /* PageDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataItem.swift; sourceTree = "<group>"; };
+		B797CD6C212D881E00136D08 /* ThumbnailDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailDataItem.swift; sourceTree = "<group>"; };
+		B797CD6E212D887100136D08 /* TermsDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsDataItem.swift; sourceTree = "<group>"; };
+		B797CD70212D8B9700136D08 /* QueryDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryDataItem.swift; sourceTree = "<group>"; };
+		B797CD72212D8D8600136D08 /* SearchResultDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDataItem.swift; sourceTree = "<group>"; };
+		B797CD76212DAB2500136D08 /* WikiSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearchViewModel.swift; sourceTree = "<group>"; };
+		B797CD78212EF95A00136D08 /* WSWikiSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSWikiSearchTableViewCell.swift; sourceTree = "<group>"; };
+		B797CD922130527B00136D08 /* Thumbnail+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B797CD932130527B00136D08 /* Terms+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Terms+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B797CD942130527B00136D08 /* Page+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B797CD952130527B00136D08 /* Thumbnail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B797CD962130527B00136D08 /* Terms+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Terms+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B797CD972130527B00136D08 /* Page+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Page+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B797CD9E2130647200136D08 /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
+		B797CDA0213066F900136D08 /* OfflineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewModel.swift; sourceTree = "<group>"; };
+		B797CDA2213068B300136D08 /* OfflineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineTableViewCell.swift; sourceTree = "<group>"; };
+		E30D051E0879B17E8D7E42E1 /* Pods-WikiSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-WikiSearch/Pods-WikiSearch.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B797CD11212D7BF200136D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B173113C5631882D6B4AB620 /* Pods_WikiSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B797CD28212D7BF400136D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B797CD33212D7BF400136D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		137FEBADD0A2D1AF83EF4ADD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F294E0349AF696CE5D97F13 /* Pods-WikiSearch.debug.xcconfig */,
+				E30D051E0879B17E8D7E42E1 /* Pods-WikiSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CF85A2FB2145BA0D8725AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9D3EC4125A533AA3AAF3FC /* Pods_WikiSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B797CD0B212D7BF200136D08 = {
+			isa = PBXGroup;
+			children = (
+				B797CD16212D7BF200136D08 /* WikiSearch */,
+				B797CD2E212D7BF400136D08 /* WikiSearchTests */,
+				B797CD39212D7BF500136D08 /* WikiSearchUITests */,
+				B797CD15212D7BF200136D08 /* Products */,
+				137FEBADD0A2D1AF83EF4ADD /* Pods */,
+				8CF85A2FB2145BA0D8725AF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B797CD15212D7BF200136D08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD14212D7BF200136D08 /* WikiSearch.app */,
+				B797CD2B212D7BF400136D08 /* WikiSearchTests.xctest */,
+				B797CD36212D7BF400136D08 /* WikiSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B797CD16212D7BF200136D08 /* WikiSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD4E212D813100136D08 /* Model */,
+				B797CD4D212D812B00136D08 /* View */,
+				B797CD4C212D811C00136D08 /* ViewModel */,
+				B797CD4B212D811600136D08 /* Managers */,
+				B797CD4A212D810E00136D08 /* Support */,
+				B797CD17212D7BF200136D08 /* AppDelegate.swift */,
+				B797CD1B212D7BF200136D08 /* Main.storyboard */,
+				B797CD21212D7BF400136D08 /* Assets.xcassets */,
+				B797CD23212D7BF400136D08 /* LaunchScreen.storyboard */,
+				B797CD26212D7BF400136D08 /* Info.plist */,
+				B797CD1E212D7BF200136D08 /* WikiSearch.xcdatamodeld */,
+			);
+			path = WikiSearch;
+			sourceTree = "<group>";
+		};
+		B797CD2E212D7BF400136D08 /* WikiSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD2F212D7BF400136D08 /* WikiSearchTests.swift */,
+				B797CD31212D7BF400136D08 /* Info.plist */,
+			);
+			path = WikiSearchTests;
+			sourceTree = "<group>";
+		};
+		B797CD39212D7BF500136D08 /* WikiSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD3A212D7BF500136D08 /* WikiSearchUITests.swift */,
+				B797CD3C212D7BF500136D08 /* Info.plist */,
+			);
+			path = WikiSearchUITests;
+			sourceTree = "<group>";
+		};
+		B797CD4A212D810E00136D08 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD66212D82FC00136D08 /* WSAppConstant.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B797CD4B212D811600136D08 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD59212D81C200136D08 /* Data Managers */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B797CD4C212D811C00136D08 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD76212DAB2500136D08 /* WikiSearchViewModel.swift */,
+				B797CDA0213066F900136D08 /* OfflineViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B797CD4D212D812B00136D08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD52212D818A00136D08 /* Controllers */,
+				B797CD51212D818500136D08 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B797CD4E212D813100136D08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD50212D816A00136D08 /* CoreDataModel */,
+				B797CD4F212D814D00136D08 /* ObjectModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B797CD4F212D814D00136D08 /* ObjectModel */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD6A212D871A00136D08 /* PageDataItem.swift */,
+				B797CD6C212D881E00136D08 /* ThumbnailDataItem.swift */,
+				B797CD6E212D887100136D08 /* TermsDataItem.swift */,
+				B797CD70212D8B9700136D08 /* QueryDataItem.swift */,
+				B797CD72212D8D8600136D08 /* SearchResultDataItem.swift */,
+			);
+			path = ObjectModel;
+			sourceTree = "<group>";
+		};
+		B797CD50212D816A00136D08 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD922130527B00136D08 /* Thumbnail+CoreDataClass.swift */,
+				B797CD952130527B00136D08 /* Thumbnail+CoreDataProperties.swift */,
+				B797CD962130527B00136D08 /* Terms+CoreDataClass.swift */,
+				B797CD932130527B00136D08 /* Terms+CoreDataProperties.swift */,
+				B797CD972130527B00136D08 /* Page+CoreDataClass.swift */,
+				B797CD942130527B00136D08 /* Page+CoreDataProperties.swift */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		B797CD51212D818500136D08 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD78212EF95A00136D08 /* WSWikiSearchTableViewCell.swift */,
+				B797CDA2213068B300136D08 /* OfflineTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B797CD52212D818A00136D08 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD19212D7BF200136D08 /* WSWikiSearchViewController.swift */,
+				B797CD9E2130647200136D08 /* OfflineViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B797CD59212D81C200136D08 /* Data Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B797CD5C212D823000136D08 /* WSCoreDataManager.swift */,
+				B797CD5E212D826400136D08 /* WSCoreDataStack.swift */,
+				B797CD60212D828500136D08 /* WSNetworkManager.swift */,
+			);
+			path = "Data Managers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B797CD13212D7BF200136D08 /* WikiSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B797CD3F212D7BF500136D08 /* Build configuration list for PBXNativeTarget "WikiSearch" */;
+			buildPhases = (
+				5BD6B2B5899F514B57E0FBE6 /* [CP] Check Pods Manifest.lock */,
+				B797CD10212D7BF200136D08 /* Sources */,
+				B797CD11212D7BF200136D08 /* Frameworks */,
+				B797CD12212D7BF200136D08 /* Resources */,
+				28209DD85EAF1E3DABDD226E /* [CP] Embed Pods Frameworks */,
+				3A69E46AF9FA6F92EEAD9113 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiSearch;
+			productName = WikiSearch;
+			productReference = B797CD14212D7BF200136D08 /* WikiSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B797CD2A212D7BF400136D08 /* WikiSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B797CD42212D7BF500136D08 /* Build configuration list for PBXNativeTarget "WikiSearchTests" */;
+			buildPhases = (
+				B797CD27212D7BF400136D08 /* Sources */,
+				B797CD28212D7BF400136D08 /* Frameworks */,
+				B797CD29212D7BF400136D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B797CD2D212D7BF400136D08 /* PBXTargetDependency */,
+			);
+			name = WikiSearchTests;
+			productName = WikiSearchTests;
+			productReference = B797CD2B212D7BF400136D08 /* WikiSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B797CD35212D7BF400136D08 /* WikiSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B797CD45212D7BF500136D08 /* Build configuration list for PBXNativeTarget "WikiSearchUITests" */;
+			buildPhases = (
+				B797CD32212D7BF400136D08 /* Sources */,
+				B797CD33212D7BF400136D08 /* Frameworks */,
+				B797CD34212D7BF400136D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B797CD38212D7BF500136D08 /* PBXTargetDependency */,
+			);
+			name = WikiSearchUITests;
+			productName = WikiSearchUITests;
+			productReference = B797CD36212D7BF400136D08 /* WikiSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B797CD0C212D7BF200136D08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = MoneyTap;
+				TargetAttributes = {
+					B797CD13212D7BF200136D08 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					B797CD2A212D7BF400136D08 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B797CD13212D7BF200136D08;
+					};
+					B797CD35212D7BF400136D08 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B797CD13212D7BF200136D08;
+					};
+				};
+			};
+			buildConfigurationList = B797CD0F212D7BF200136D08 /* Build configuration list for PBXProject "WikiSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B797CD0B212D7BF200136D08;
+			productRefGroup = B797CD15212D7BF200136D08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B797CD13212D7BF200136D08 /* WikiSearch */,
+				B797CD2A212D7BF400136D08 /* WikiSearchTests */,
+				B797CD35212D7BF400136D08 /* WikiSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B797CD12212D7BF200136D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B797CD25212D7BF400136D08 /* LaunchScreen.storyboard in Resources */,
+				B797CD22212D7BF400136D08 /* Assets.xcassets in Resources */,
+				B797CD1D212D7BF200136D08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B797CD29212D7BF400136D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B797CD34212D7BF400136D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28209DD85EAF1E3DABDD226E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WikiSearch/Pods-WikiSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WikiSearch/Pods-WikiSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A69E46AF9FA6F92EEAD9113 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WikiSearch/Pods-WikiSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD6B2B5899F514B57E0FBE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikiSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B797CD10212D7BF200136D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B797CD9A2130527B00136D08 /* Page+CoreDataProperties.swift in Sources */,
+				B797CD982130527B00136D08 /* Thumbnail+CoreDataClass.swift in Sources */,
+				B797CD1A212D7BF200136D08 /* WSWikiSearchViewController.swift in Sources */,
+				B797CD79212EF95A00136D08 /* WSWikiSearchTableViewCell.swift in Sources */,
+				B797CD20212D7BF200136D08 /* WikiSearch.xcdatamodeld in Sources */,
+				B797CD67212D82FC00136D08 /* WSAppConstant.swift in Sources */,
+				B797CD9D2130527B00136D08 /* Page+CoreDataClass.swift in Sources */,
+				B797CD71212D8B9700136D08 /* QueryDataItem.swift in Sources */,
+				B797CD5D212D823000136D08 /* WSCoreDataManager.swift in Sources */,
+				B797CD6B212D871A00136D08 /* PageDataItem.swift in Sources */,
+				B797CD61212D828500136D08 /* WSNetworkManager.swift in Sources */,
+				B797CD9C2130527B00136D08 /* Terms+CoreDataClass.swift in Sources */,
+				B797CD992130527B00136D08 /* Terms+CoreDataProperties.swift in Sources */,
+				B797CD9F2130647200136D08 /* OfflineViewController.swift in Sources */,
+				B797CD9B2130527B00136D08 /* Thumbnail+CoreDataProperties.swift in Sources */,
+				B797CD18212D7BF200136D08 /* AppDelegate.swift in Sources */,
+				B797CD73212D8D8600136D08 /* SearchResultDataItem.swift in Sources */,
+				B797CDA1213066F900136D08 /* OfflineViewModel.swift in Sources */,
+				B797CDA3213068B300136D08 /* OfflineTableViewCell.swift in Sources */,
+				B797CD6D212D881E00136D08 /* ThumbnailDataItem.swift in Sources */,
+				B797CD6F212D887100136D08 /* TermsDataItem.swift in Sources */,
+				B797CD5F212D826400136D08 /* WSCoreDataStack.swift in Sources */,
+				B797CD77212DAB2500136D08 /* WikiSearchViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B797CD27212D7BF400136D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B797CD30212D7BF400136D08 /* WikiSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B797CD32212D7BF400136D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B797CD3B212D7BF500136D08 /* WikiSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B797CD2D212D7BF400136D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B797CD13212D7BF200136D08 /* WikiSearch */;
+			targetProxy = B797CD2C212D7BF400136D08 /* PBXContainerItemProxy */;
+		};
+		B797CD38212D7BF500136D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B797CD13212D7BF200136D08 /* WikiSearch */;
+			targetProxy = B797CD37212D7BF500136D08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B797CD1B212D7BF200136D08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B797CD1C212D7BF200136D08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B797CD23212D7BF400136D08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B797CD24212D7BF400136D08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B797CD3D212D7BF500136D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B797CD3E212D7BF500136D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B797CD40212D7BF500136D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F294E0349AF696CE5D97F13 /* Pods-WikiSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUMV2M4J6U;
+				INFOPLIST_FILE = WikiSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.WikiSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B797CD41212D7BF500136D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30D051E0879B17E8D7E42E1 /* Pods-WikiSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUMV2M4J6U;
+				INFOPLIST_FILE = WikiSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.WikiSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B797CD43212D7BF500136D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUMV2M4J6U;
+				INFOPLIST_FILE = WikiSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.WikiSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiSearch.app/WikiSearch";
+			};
+			name = Debug;
+		};
+		B797CD44212D7BF500136D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUMV2M4J6U;
+				INFOPLIST_FILE = WikiSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.WikiSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiSearch.app/WikiSearch";
+			};
+			name = Release;
+		};
+		B797CD46212D7BF500136D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUMV2M4J6U;
+				INFOPLIST_FILE = WikiSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.WikiSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiSearch;
+			};
+			name = Debug;
+		};
+		B797CD47212D7BF500136D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QUMV2M4J6U;
+				INFOPLIST_FILE = WikiSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.WikiSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B797CD0F212D7BF200136D08 /* Build configuration list for PBXProject "WikiSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B797CD3D212D7BF500136D08 /* Debug */,
+				B797CD3E212D7BF500136D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B797CD3F212D7BF500136D08 /* Build configuration list for PBXNativeTarget "WikiSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B797CD40212D7BF500136D08 /* Debug */,
+				B797CD41212D7BF500136D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B797CD42212D7BF500136D08 /* Build configuration list for PBXNativeTarget "WikiSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B797CD43212D7BF500136D08 /* Debug */,
+				B797CD44212D7BF500136D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B797CD45212D7BF500136D08 /* Build configuration list for PBXNativeTarget "WikiSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B797CD46212D7BF500136D08 /* Debug */,
+				B797CD47212D7BF500136D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B797CD1E212D7BF200136D08 /* WikiSearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B797CD1F212D7BF200136D08 /* WikiSearch.xcdatamodel */,
+			);
+			currentVersion = B797CD1F212D7BF200136D08 /* WikiSearch.xcdatamodel */;
+			path = WikiSearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B797CD0C212D7BF200136D08 /* Project object */;
+}
